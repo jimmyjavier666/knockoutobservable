@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/libs/knockout-3.2.0.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" class="form-control" data-bind="value: empleado.nombre" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Apellido paterno</label>
+                <input type="text" class="form-control" data-bind="value:empleado.apellidoPaterno" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Apellido materno</label>
+                <input type="text" class="form-control" data-bind="value:empleado.apellidoMaterno" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Correo electrónico</label>
+                <input type="text" class="form-control" data-bind="value:empleado.correoElectronico" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Número personal</label>
+                <input type="text" class="form-control" data-bind="value:empleado.numeroPersonal" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Antigüedad</label>
+                <input type="text" class="form-control" data-bind="value:empleado.antiguedad" />
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <span data-bind="text: empleado.nombre" class="form-control"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Apellido paterno</label>
+                    <span data-bind="text: empleado.apellidoPaterno" class="form-control"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Apellido materno</label>
+                    <span data-bind="text: empleado.apellidoMaterno" class="form-control"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Correo electrónico</label>
+                    <span data-bind="text: empleado.correoElectronico" class="form-control"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Número personal</label>
+                    <span data-bind="text: empleado.numeroPersonal" class="form-control"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label>Antigüedad</label>
+                    <span data-bind="text: empleado.antiguedad" class="form-control"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript" src="js/apps/orfisApp.js"></script>
+<script type="text/javascript" src="js/modelos/empleado.js"></script>
+<script type="text/javascript" src="js/viewmodels/vmempleado.js"></script>
+</body>
+</html>
